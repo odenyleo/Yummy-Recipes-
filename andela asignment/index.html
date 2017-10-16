@@ -1,0 +1,81 @@
+ <html>
+ <head>
+ 	<div id = "front_block">
+ 		<div id ="front_header">
+ 			<u>welcome</u>
+
+ 		</div>
+
+
+
+ 	<style type="text/css">
+
+ 	body{font-family: verdana; font-size: 15px;background-image: url("images/1.jpg"); background-size: cover; background-attachment: scroll;}
+ 	div#back_glob{ background-color: rgba(255,0,204,0.5); border : 1px solid #ff00ff; width: 350px; margin: 100px auto; box-shadow: 1px 0px 15px #ff00ff;}
+ 	input{display: block; margin: 10px;}
+ 	div#back_header{background-color:#ff00ff; text-align: center; font-size: 22px; font-weight: bold; color: white; padding: 20px; }
+ 	input[type=text] , input[type=password] {font-size:15px; padding: 10px; border-radius: 3px; border: 1px solid #ddd;border : 1px solid #ff00ff; box-shadow: 1px 0px 15px #ff00ff;}
+ 	input[type=submit]{background-color: #ff00ff; padding: 5px 10px 5px 10px;border-radius: 3px;  border: 1px solid #319db8; color: white; font-weight: bold;border : 1px solid #ff00ff; box-shadow: 1px 0px 15px #ff00ff; cursor: pointer;}
+ 	input[type=button]{background-color: #ff00ff; padding: 5px 10px 5px 10px;border-radius: 3px;  border: 1px solid #319db8; color: white; font-weight: bold;border : 1px solid #ff00ff; box-shadow: 1px 0px 15px #ff00ff;  cursor: pointer;}
+ 	div#back_form {display: flex; justify-content: center;}
+ 	div#front_block{ background:r; width: 330px;height:50px; margin: 0 auto;}
+ 	div#front_header{background-color: transparent; text-align: center; font-size: 32px; font-weight: bold; color:#ff00ff; padding: 10px; font-family: algerian;}
+
+ 	</style>
+
+ 	<script type="text/javascript">
+ 	function submitfuction(){
+
+ 		var x=document.forms["myform"] ["username"].value;
+ 		var y=document.forms["myform"] ["password"].value;
+ 		if (x==null || x=="" || y==null || y=="") {
+
+ 			alert("both fields cannot be empty");
+ 			}
+	 		else{
+	 			if (x=="leon") {
+
+	 				if (y=="abigael2011") {
+
+	 					alert("login succesfull");
+	 					}
+	 					else{alert("password do not match");
+
+	 					}
+
+			 		}
+			 	else{alert("user do not exist")
+			 		}
+		 		}
+
+	 	}
+ 		
+ 	
+ 	</script>
+
+
+ </head>
+
+ <body>
+ 	<div id = "back_glob">
+
+ 		<div id = "back_header">
+ 			LOGIN 
+ 		</div>
+ 		<div id = "back_form">
+
+
+ 			<form name="myform" onsubmit="submitfuction()" method="POST" />
+ 				<input type = "text" name = "username" placeholder = "username"/>
+ 				<input type = "password" name = "password" placeholder = "password" />
+ 				<input type = "submit" name = "valid" value = "Login" />
+ 				<a href="signup.html"><input type = "button" name = "valid" value = "Sign Up"/></a>
+ 			</form> 
+
+ 		</div>
+
+ 	</div>
+
+
+ </body>
+ </html>
